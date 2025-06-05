@@ -1,5 +1,5 @@
 import React from 'react';
-import AppRoutes from './routes/Approutes';
+import AppRoutes from './Routes/Approutes';
 
 const App = () => <AppRoutes />;
 

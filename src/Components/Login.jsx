@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
+
 const Input = ({
   id,
   type = "text",
@@ -63,6 +64,7 @@ const Login = () => {
   };
 
   return (
+  
     <div className="min-h-screen flex items-center justify-center bg-[#F7F8F9] font-sans">
     <div className="bg-[#F7F8F9] w-[375px] h-[660px] border border-gray-200 px-5 pt-10 font-sans">
       <h1 className="text-2xl font-bold text-[#1D2226] leading-9">
@@ -73,7 +75,7 @@ const Login = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       </p>
 
-      <form className="space-y-6 mt-6" onSubmit={handleSubmit}>
+      <div className="space-y-6 mt-6">
         <Input
           id="email"
           type="email"
@@ -92,14 +94,15 @@ const Login = () => {
         />
 
         <button
-          type="submit"
+          onClick={handleSubmit}
           className="bg-[#6C25FF] rounded-md text-white text-base leading-[17px] font-medium w-full h-[46px] cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#5A1EDB] mt-4"
         >
           Login
         </button>
-      </form>
+      </div>
     </div>
     </div>
+   
   );
 };
 

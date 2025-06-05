@@ -1,3 +1,5 @@
+
+
 const Profile = () => {
   const user = JSON.parse(localStorage.getItem('user'));
   const name = user?.name || 'Guest User';
@@ -5,10 +7,11 @@ const Profile = () => {
   const company = user?.company || '';
 
   return (
+    
   <div className="min-h-screen bg-gray-50 flex items-start justify-center">
     <div className="w-full max-w-md mx-4 mt-8">
-      <div className="bg-white rounded-t-xl shadow-none">
-        <h2 className="text-lg font-semibold p-6 pb-3 text-left border-b">Account Settings</h2>
+      <div className="w-[360px] bg-gray-100 border border-gray-300 shadow-md p-6 h-[90vh]">
+        <h2 className="text-lg font-semibold p-6 pb-3 text-left  border-b">Account Settings</h2>
         <div className="flex items-center gap-4 px-6 pt-5 pb-2">
           <div className="relative">
             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="profile" className="rounded-full w-16 h-16 object-cover border" />
@@ -31,10 +34,11 @@ const Profile = () => {
             Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquam Erat, Sed Diam
           </p>
         </div>
-        <div className="border-t mx-6 mb-4"></div>
+        <div className="border-t border-dotted mx-6 mb-4"></div>
       </div>
     </div>
   </div>
+ 
 );
 };
 
